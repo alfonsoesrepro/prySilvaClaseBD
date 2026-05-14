@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInterfaz));
             this.cboDatabases = new System.Windows.Forms.ComboBox();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnCargar = new System.Windows.Forms.Button();
@@ -119,7 +120,9 @@
             this.Controls.Add(this.btnCargar);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.cboDatabases);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmInterfaz";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Visor de Bases de Datos";
             this.Load += new System.EventHandler(this.frmInterfaz_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvData)).EndInit();
